@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto number generator</title>
+</head>
+<body>
+<button> Click here to generate random numbers</button>
+    
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number Generator</title>
+</head>
+<body>
+    <h1>Random Number Generator</h1>
+    <form action="random_numbers.php" method="post">
+        <button type="submit" name="generate">Generate Random Numbers</button>
+    </form>
+    <?php
+        if (isset($_POST['generate'])) {
+            include 'random_numbers.php';
+        }
+    ?>
+</body>
+</html>
